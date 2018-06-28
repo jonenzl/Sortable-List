@@ -17,10 +17,20 @@
     
     $(function() {
         
-        // listener to add an item to the list
+        // listener to add an item to the list by clicking button
         $("#addButton").on("click", function(e) {
             e.preventDefault();
             addItem()
+        });
+        
+        // listener to add an item to the list by using enter key
+        $("#addItem").keypress(function (e) {
+            var key = e.which;
+            if(key == 13)  // the enter key code
+            {
+                $("#addButton").click();
+                return false;  
+            }
         });
         
         //EVENT DELEGATION
