@@ -62,3 +62,23 @@ ul {
 .form-group {
     margin-top: 32px;
 }
+
+/* ----------- Phone Responsiveness ----------- */
+@media only screen and (max-width: 568px) {
+    .container {
+        padding: 16px;
+        margin-top: 16px;
+    }
+    
+    .listTitle {
+        font-size: 1.5em;
+    }
+    
+    .list-group {
+        margin: 16px auto;
+    }
+    
+    .form-group {
+        margin-top: 16px;
+    }
+}
