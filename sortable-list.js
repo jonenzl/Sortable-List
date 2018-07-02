@@ -15,6 +15,11 @@
         $(item).parent().remove();
     }
     
+    // function to prevent page scrolling on touch devices while moving items in the list
+    $(".list-group").bind("touchmove", function(e) {
+        e.preventDefault();
+    });
+    
     $(function() {
         
         // listener to add an item to the list by clicking button
