@@ -1,7 +1,7 @@
 # Sortable-List
 A sortable list built using HTML, CSS, and JS.
 
-Demo: https://internal.optimism.co.nz/dev/web/sort/sortable-list.html
+Demo: https://internal.optimism.co.nz/dev/sortable-list/sortable-list.html
 
 ## Features
 * Reorder items
