@@ -25,16 +25,25 @@
         // listener to add an item to the list by clicking button
         $("#addButton").on("click", function(e) {
             e.preventDefault();
-            addItem()
+            addItem();
         });
         
         // listener to add an item to the list by using enter key
         $("#addItem").keypress(function (e) {
             var key = e.which;
-            if(key == 13)  // the enter key code
-            {
-                $("#addButton").click();
-                return false;  
+            // add a new list item if the input box's value isn't empty
+            if ($("#addItem").val() != "") {
+                if (key == 13)  // the enter key code
+                {
+                    addItem()
+                    return false;
+                }
+            } else {
+                if (key == 13)  // the enter key code
+                {
+                    // prevent the page from reloading when pressing enter if input box is blank
+                    e.preventDefault();
+                }
             }
         });
         
